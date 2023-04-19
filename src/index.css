@@ -30,7 +30,7 @@ li:hover::before {
 }
 
 .card {
-    background: #000;
+    background: url(src/Assets/texture.png);
 }
 
 .icon {
