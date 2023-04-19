@@ -5,10 +5,10 @@ import { CiLocationOn } from 'react-icons/ci'
 
 const Search = () => {
   return (
-    <div className='searchDiv grid gp-10 bg-greyIsh rounded-[10px] p-[3rem]'>
+    <div className='searchDiv grid gap-10 bg-greyIsh rounded-[10px] p-[3rem]'>
       <form action="">
         <div className='firstDiv flex justify-between items-center rounded-[8px] gap-[10px]
-          bg-white p-5 shhadow-lg shadow-greyIsh-700'>
+          bg-white p-5 shadow-lg shadow-greyIsh-700'>
 
             <div className='flex gap-2 items-center'>
               <AiOutlineSearch className='text-[25px] icon'/>
@@ -38,6 +38,47 @@ const Search = () => {
 
          </div> 
       </form>
+
+      <div className='secondDiv flex items-center gap-10 justify-center'> 
+
+        <div className='singleSearch flex items-center gap-2'>
+          <label htmlFor="relevance" clasName='text-[#808080] font-semibold'>Sort by:</label>
+
+          <select name="relevance" id="relevance" className='bg-white rounded-[3px] px-4 py-1'>
+            <option value="">Relevance</option>
+            <option value="">Inlusive</option>
+            <option value="">Starts With</option>
+            <option value="">Contains</option>
+          </select>
+        </div>
+
+        <div className='singleSearch flex items-center gap-2'>
+          <label htmlFor="type" clasName='text-[#808080] font-semibold'>Type:</label>
+
+          <select name="" id="type" className='bg-white rounded-[3px] px-4 py-1'>
+            <option value="">Full-time</option>
+            <option value="">Remote</option>
+            <option value="">Part-time</option>
+            <option value="">Contract</option>
+          </select>
+        </div>
+
+        <div className='singleSearch flex items-center gap-2'>
+          <label htmlFor="level" clasName='text-[#808080] font-semibold'>Level:</label>
+
+          <select name="" id="level" className='bg-white rounded-[3px] px-4 py-1'>
+            <option value="">Senior</option>
+            <option value="">Beginner</option>
+            <option value="">Intermediate</option>
+            <option value="">Advocate</option>
+          </select>
+        </div>
+
+        <span className='text-[#a1a1a1] cursor-pointer'>
+          Clear All
+        </span>
+
+      </div>
 
     </div>
   )
